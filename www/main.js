@@ -29,19 +29,19 @@ $(document).ready(function () {
         sync: true,
         in: {
             effect: "fadeInUp",
-            sync: true, 
+            sync: true,
         },
         out: {
             effect: "fadeOutUp",
-            sync:true,
+            sync: true,
         },
     });
 
     // Mic button click event
-    $("#MicBtn").click(function () { 
-        
+    $("#MicBtn").click(function () {
         eel.playAssistantSound()
         $("#Oval").attr("hidden", true);
         $("#SiriWave").attr("hidden", false);
+        eel.allCommands()()
     });
 });
